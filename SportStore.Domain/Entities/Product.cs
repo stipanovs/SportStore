@@ -8,10 +8,15 @@ namespace SportStore.Domain.Entities
 {
     public class Product
     {
-        public int ProductID { get; set; }
-        public string Name { get; set; }
-        public string Description { get; set; }
-        public decimal Price { get; set; }
-        public string Category { get; set; }
+        public virtual int ProductID { get; set; }
+        public virtual string Name { get; set; }
+        public virtual string Description { get; set; }
+        public virtual decimal Price { get; set; }
+        public virtual string Category { get; set; }
+
+        public Product()
+        {
+            
+        }
     }
 }

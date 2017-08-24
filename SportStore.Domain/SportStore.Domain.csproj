@@ -58,10 +58,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstract\IProductsRepository.cs" />
+    <Compile Include="Abstract\IProductRepository.cs" />
     <Compile Include="App_Start\NHibernateProfilerBootstrapper.cs" />
     <Compile Include="Concrete\NHibernateProvider.cs" />
     <Compile Include="Concrete\NhProductRepository.cs" />
+    <Compile Include="Entities\Cart.cs" />
+    <Compile Include="Entities\CartLine.cs" />
     <Compile Include="Entities\Product.cs" />
     <Compile Include="Mapping\ProductMap.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

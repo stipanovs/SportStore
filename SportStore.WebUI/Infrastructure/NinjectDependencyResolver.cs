@@ -35,7 +35,7 @@ namespace SportStore.WebUI.Infrastructure
 
         private void AddBindings()
         {
-            //Mock<IProductsRepository> mock = new Mock<IProductsRepository>();
+            //Mock<IProductRepository> mock = new Mock<IProductRepository>();
             //mock.Setup(m => m.Products).Returns(new List<Product>
             //{
             //    new Product {Name = "Football", Price = 25},
@@ -43,9 +43,9 @@ namespace SportStore.WebUI.Infrastructure
             //    new Product {Name = "Running shoes", Price = 95}
             //});
 
-            //kernel.Bind<IProductsRepository>().ToConstant(mock.Object);
+            //kernel.Bind<IProductRepository>().ToConstant(mock.Object);
 
-            kernel.Bind<IProductsRepository>().To<NhProductRepository>();
+            kernel.Bind<IProductRepository>().To<NhProductRepository>();
 
         }
     }

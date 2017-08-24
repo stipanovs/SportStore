@@ -9,7 +9,7 @@ using SportStore.Domain.Entities;
 
 namespace SportStore.Domain.Concrete
 {
-    public class NhProductRepository : IProductsRepository
+    public class NhProductRepository : IProductRepository
     {
         private readonly ISession _session = null;
 
